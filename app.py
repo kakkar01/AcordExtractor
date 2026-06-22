@@ -9,6 +9,8 @@ from typing import Any
 import fitz
 import streamlit as st
 
+import config
+
 PROJECT_ROOT = Path(__file__).resolve().parent
 
 
@@ -79,6 +81,8 @@ if run_button:
             cmd = [
                 sys.executable,
                 str(PROJECT_ROOT / "main.py"),
+                "--backend",
+                config.INFERENCE_BACKEND,
                 "extract",
                 str(temp_path),
                 "--no-save",
