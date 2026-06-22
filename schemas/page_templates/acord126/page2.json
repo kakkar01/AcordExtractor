@@ -1,0 +1,82 @@
+{
+  "PAGE METADATA": {
+    "form_name": "ACORD 126",
+    "form_title": "Commercial General Liability Section",
+    "edition": "2016",
+    "page_number": "2",
+    "total_pages": "2",
+    "date (MM/DD/YYYY)": null
+  },
+
+  "POLICY AND COVERAGES": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed", "checkbox"]
+    },
+    "row_1": [
+      {
+        "FIELD_5_POLICY_INFO": { "value": null },
+        "FIELD_6_POLICY_INFO": { "value": null }
+      }
+    ]
+  },
+
+  "LIMITS AND PREMIUMS": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed"]
+    },
+    "row_1": [
+      {
+        "FIELD_6_LIMIT": { "value": null },
+        "FIELD_7_LIMIT": { "value": null },
+        "FIELD_6_PREMIUM": { "value": null }
+      }
+    ]
+  },
+
+  "DEDUCTIBLES": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed"]
+    },
+    "row_1": [
+      {
+        "FIELD_4_DEDUCTIBLE": { "value": null },
+        "FIELD_5_DEDUCTIBLE": { "value": null }
+      }
+    ]
+  },
+
+  "REMARKS AND SIGNATURE": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed"]
+    },
+    "row_1": [
+      {
+        "FIELD_1_REMARKS": { "value": null },
+        "FIELD_2_REMARKS": { "value": null },
+        "FIELD_1_SIGNATURE": { "value": null },
+        "FIELD_2_SIGNATURE": { "value": null }
+      }
+    ]
+  },
+
+  "SCHEDULE OF HAZARDS": {
+    "section_metadata": {
+      "repeating_rows": "yes",
+      "rows": ["row_1", "row_2", "row_3", "row_4", "row_5"],
+      "input_value_format": ["typed"]
+    },
+    "row_1": [ {} ],
+    "row_2": [ {} ],
+    "row_3": [ {} ],
+    "row_4": [ {} ],
+    "row_5": [ {} ]
+  }
+}

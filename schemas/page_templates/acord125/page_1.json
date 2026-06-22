@@ -1,0 +1,72 @@
+{
+  "policy_header": {
+    "agency": "verbatim-string",
+    "date_of_application": "verbatim-string",
+    "agency_phone_number": "verbatim-string",
+    "agency_address": "verbatim-string",
+    "status_of_transaction": [{"Quote":"boolean", "Bound":"boolean", "Issue Policy":"boolean", "Renew":"boolean", "Change":"boolean", "Cancel":"boolean"}]
+  },
+  "lines_of_business": [
+    {
+      "lob": "verbatim-string",
+      "selected": "boolean",
+      "premium": "verbatim-string"
+    }
+  ],
+  "attachments": [
+    {
+      "attachment_type": "verbatim-string",
+      "selected": "boolean"
+    }
+  ],
+  "locations": [
+    {
+      "loc_number": "verbatim-string",
+      "bld_number": "verbatim-string",
+      "address_line": "verbatim-string",
+      "city": "verbatim-string",
+      "state": "verbatim-string",
+      "county": "verbatim-string",
+      "zip": "verbatim-string",
+      "description_of_operations": "verbatim-string",
+      "interest_owner": "boolean",
+      "interest_tenant": "boolean",
+      "interest_manager": "boolean",
+      "annual_revenues": "verbatim-string",
+      "occupied_area": "verbatim-string",
+      "open_to_public_area": "verbatim-string",
+      "total_building_area": "verbatim-string",
+      "any_area_leased_to_others": "verbatim-string",
+      "nature_of_business": "verbatim-string",
+      "description_of_primary_operations": "verbatim-string",
+      "full_time_employees": "verbatim-string",
+      "part_time_employees": "verbatim-string"
+    }
+  ],
+  "policy_information": {
+    "proposed_effective_date": "verbatim-string",
+    "proposed_expiration_date": "verbatim-string",
+    "billing_plan": ["Direct", "Agency"],
+    "payment_plan": "verbatim-string",
+    "method_of_payment": "verbatim-string",
+    "audit": "verbatim-string",
+    "deposit": "verbatim-string",
+    "minimum_premium": "verbatim-string",
+    "policy_premium": "verbatim-string"
+  },
+  "insured": {
+    "sic": "verbatim-string",
+    "naics": "verbatim-string",
+    "fein_or_soc_sec": "verbatim-string",
+    "website_address": "verbatim-string",
+    "company_type_options": [
+      {
+        "company_type": "verbatim-string",
+        "selected": "boolean"
+      }
+    ],
+    "insured_name": "verbatim-string",
+    "mailing_address": "verbatim-string",
+    "license": "verbatim-string"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "prior_carrier_table": {
+    "years": ["verbatim-string"],
+    "categories": ["verbatim-string"],
+    "cells": [
+      {
+        "year": "verbatim-string",
+        "category": "verbatim-string",
+        "value": "verbatim-string"
+      }
+    ]
+  },
+  "loss_history": [
+    {
+      "date_of_occurrence": "verbatim-string",
+      "type_or_description": "verbatim-string",
+      "date_of_claim": "verbatim-string",
+      "amount_paid": "verbatim-string",
+      "amount_reserved": "verbatim-string",
+      "subrogation": "verbatim-string",
+      "claim_open": "verbatim-string"
+    }
+  ]
+}

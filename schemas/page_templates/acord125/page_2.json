@@ -1,0 +1,26 @@
+{
+  "locations": [
+    {
+      "loc_number": "verbatim-string",
+      "bld_number": "verbatim-string",
+      "address_line": "verbatim-string",
+      "city": "verbatim-string",
+      "state": "verbatim-string",
+      "county": "verbatim-string",
+      "zip": "verbatim-string",
+      "description_of_operations": "verbatim-string",
+      "interest_owner": "boolean",
+      "interest_tenant": "boolean",
+      "interest_manager": "boolean",
+      "annual_revenues": "verbatim-string",
+      "occupied_area": "verbatim-string",
+      "open_to_public_area": "verbatim-string",
+      "total_building_area": "verbatim-string",
+      "any_area_leased_to_others": "verbatim-string",
+      "nature_of_business": "verbatim-string",
+      "description_of_primary_operations": "verbatim-string",
+      "full_time_employees": "verbatim-string",
+      "part_time_employees": "verbatim-string"
+    }
+  ]
+}

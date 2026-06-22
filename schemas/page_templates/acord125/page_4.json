@@ -1,0 +1,17 @@
+{
+  "supplemental": {
+    "questions_and_answers": [
+      {
+        "question": "verbatim-string",
+        "answer": "verbatim-string"
+      }
+    ],
+    "remarks": "verbatim-string",
+    "signatures": [
+      {
+        "label": "verbatim-string",
+        "value": "verbatim-string"
+      }
+    ]
+  }
+}

@@ -1,0 +1,414 @@
+{
+  "PAGE METADATA": {
+    "form_name": "ACORD 140",
+    "form_title": "Property Section",
+    "edition": "2016",
+    "page_number": "1",
+    "total_pages": "2",
+    "date (MM/DD/YYYY)": null
+  },
+
+  "HEADER": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed"]
+    },
+    "row_1": [
+      {
+        "AGENCY": { "value": null },
+        "CARRIER": { "value": null },
+        "NAIC CODE": { "value": null },
+        "EFFECTIVE DATE (MM/DD/YYYY)": { "value": null },
+        "APPLICANT (First Named Insured)": { "value": null }
+      }
+    ]
+  },
+
+  "PREMISES INFORMATION": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed", "checkbox"],
+      "has_additional_premises_page": {
+        "value": false,
+        "extraction_tip": "CRITICAL: Carefully examine the ENTIRE page for visual indicators of additional premises. Set to TRUE if you see ANY: 'ADDITIONAL PREMISES INFORMATION' text, 'Page 2', 'Continued', pagination markers (2 of 3), continuation arrows, multiple building/premises numbers, or any sign that premises data continues beyond this page. Look at section headers, margins, and bottom of page. When uncertain, prefer TRUE. Set FALSE only if clearly a complete single-page form with no continuation.",
+        "ui_tip": "This flag indicates whether a Page 2 with additional premises information exists and triggers Page 2 VLM processing"
+      }
+    },
+    "row_1": [
+      {
+        "CONSTRUCTION TYPE": { "value": null },
+        "FIRE DISTRICT": { "value": null },
+        "DISTANCE TO FIRE STATION": { "value": null },
+        "DISTANCE TO HYDRANT": { "value": null },
+        "PROT CLASS": { "value": null },
+        "NUMBER OF STORIES": { "value": null },
+        "NUMBER OF BASEMENTS": { "value": null },
+        "YEAR BUILT": { "value": null },
+        "TOTAL AREA (SQ FT)": { "value": null }
+      }
+    ]
+  },
+
+  "BUILDING IMPROVEMENTS": {
+    "section_metadata": {
+      "repeating_rows": "yes",
+      "rows": ["row_1", "row_2", "row_3", "row_4"],
+      "input_value_format": ["typed", "checkbox"]
+    },
+    "row_1": [
+      {
+        "TYPE": { "value": "ROOFING" },
+        "YEAR": { "value": null },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_2": [
+      {
+        "TYPE": { "value": "HEATING" },
+        "YEAR": { "value": null },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_3": [
+      {
+        "TYPE": { "value": "WIRING" },
+        "YEAR": { "value": null },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_4": [
+      {
+        "TYPE": { "value": "PLUMBING" },
+        "YEAR": { "value": null },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ]
+  },
+
+  "ROOF AND HEATING INFORMATION": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed", "checkbox"]
+    },
+    "row_1": [
+      {
+        "ROOF TYPE": { "value": null },
+        "OTHER OCCUPANCIES": { "value": null },
+        "HEATING SOURCE (Incl Woodburning Stove Or Fireplace Insert)": { "value": null }
+      }
+    ]
+  },
+
+  "PRIMARY HEAT": {
+    "section_metadata": {
+      "repeating_rows": "yes",
+      "rows": ["row_1", "row_2", "row_3", "row_4", "row_5", "row_6", "row_7"],
+      "input_value_format": ["checkbox"]
+    },
+    "row_1": [
+      {
+        "TYPE": { "value": "GAS" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_2": [
+      {
+        "TYPE": { "value": "OIL" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_3": [
+      {
+        "TYPE": { "value": "COAL" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_4": [
+      {
+        "TYPE": { "value": "ELECTRIC" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_5": [
+      {
+        "TYPE": { "value": "WOOD" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_6": [
+      {
+        "TYPE": { "value": "SOLAR" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_7": [
+      {
+        "TYPE": { "value": "OTHER" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ]
+  },
+
+  "SECONDARY HEAT": {
+    "section_metadata": {
+      "repeating_rows": "yes",
+      "rows": ["row_1", "row_2", "row_3", "row_4", "row_5", "row_6", "row_7"],
+      "input_value_format": ["checkbox"]
+    },
+    "row_1": [
+      {
+        "TYPE": { "value": "GAS" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_2": [
+      {
+        "TYPE": { "value": "OIL" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_3": [
+      {
+        "TYPE": { "value": "COAL" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_4": [
+      {
+        "TYPE": { "value": "ELECTRIC" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_5": [
+      {
+        "TYPE": { "value": "WOOD" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_6": [
+      {
+        "TYPE": { "value": "SOLAR" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_7": [
+      {
+        "TYPE": { "value": "OTHER" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ]
+  },
+
+  "BURGLAR ALARM TYPE": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed"]
+    },
+    "row_1": [
+      {
+        "BURGLAR ALARM TYPE": { "value": null }
+      }
+    ]
+  },
+
+  "PREMISES FIRE PROTECTION": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed"]
+    },
+    "row_1": [
+      {
+        "PREMISES FIRE PROTECTION (Sprinklers, Standpipes, CO2/Chemical Systems)": { "value": null },
+        "% SPRINKLER": { "value": null }
+      }
+    ]
+  },
+
+  "COVERAGE INFORMATION": {
+    "section_metadata": {
+      "repeating_rows": "yes",
+      "rows": ["row_1", "row_2", "row_3", "row_4", "row_5", "row_6", "row_7", "row_8"],
+      "input_value_format": ["typed"]
+    },
+    "row_1": [
+      {
+        "SUBJECT OF INSURANCE": { "value": null },
+        "AMOUNT": { "value": null },
+        "COINS %": { "value": null },
+        "VALUATION": { "value": null },
+        "CAUSES OF LOSSES": { "value": null },
+        "INFLATION GUARD %": { "value": null },
+        "DED": { "value": null },
+        "DED TYPE": { "value": null },
+        "BLKT #": { "value": null },
+        "FORMS & CONDITIONS TO APPLY": { "value": null },
+        "PREM #": { "value": null },
+        "BLDG #": { "value": null },
+        "STREET ADDRESS": { "value": null },
+        "BLDG DESC": { "value": null }
+      }
+    ],
+    "row_2": [
+      {
+        "SUBJECT OF INSURANCE": { "value": null },
+        "AMOUNT": { "value": null },
+        "COINS %": { "value": null },
+        "VALUATION": { "value": null },
+        "CAUSES OF LOSSES": { "value": null },
+        "INFLATION GUARD %": { "value": null },
+        "DED": { "value": null },
+        "DED TYPE": { "value": null },
+        "BLKT #": { "value": null },
+        "FORMS & CONDITIONS TO APPLY": { "value": null },
+        "PREM #": { "value": null },
+        "BLDG #": { "value": null },
+        "STREET ADDRESS": { "value": null },
+        "BLDG DESC": { "value": null }
+      }
+    ],
+    "row_3": [
+      {
+        "SUBJECT OF INSURANCE": { "value": null },
+        "AMOUNT": { "value": null },
+        "COINS %": { "value": null },
+        "VALUATION": { "value": null },
+        "CAUSES OF LOSSES": { "value": null },
+        "INFLATION GUARD %": { "value": null },
+        "DED": { "value": null },
+        "DED TYPE": { "value": null },
+        "BLKT #": { "value": null },
+        "FORMS & CONDITIONS TO APPLY": { "value": null },
+        "PREM #": { "value": null },
+        "BLDG #": { "value": null },
+        "STREET ADDRESS": { "value": null },
+        "BLDG DESC": { "value": null }
+      }
+    ],
+    "row_4": [
+      {
+        "SUBJECT OF INSURANCE": { "value": null },
+        "AMOUNT": { "value": null },
+        "COINS %": { "value": null },
+        "VALUATION": { "value": null },
+        "CAUSES OF LOSSES": { "value": null },
+        "INFLATION GUARD %": { "value": null },
+        "DED": { "value": null },
+        "DED TYPE": { "value": null },
+        "BLKT #": { "value": null },
+        "FORMS & CONDITIONS TO APPLY": { "value": null },
+        "PREM #": { "value": null },
+        "BLDG #": { "value": null },
+        "STREET ADDRESS": { "value": null },
+        "BLDG DESC": { "value": null }
+      }
+    ],
+    "row_5": [
+      {
+        "SUBJECT OF INSURANCE": { "value": null },
+        "AMOUNT": { "value": null },
+        "COINS %": { "value": null },
+        "VALUATION": { "value": null },
+        "CAUSES OF LOSSES": { "value": null },
+        "INFLATION GUARD %": { "value": null },
+        "DED": { "value": null },
+        "DED TYPE": { "value": null },
+        "BLKT #": { "value": null },
+        "FORMS & CONDITIONS TO APPLY": { "value": null },
+        "PREM #": { "value": null },
+        "BLDG #": { "value": null },
+        "STREET ADDRESS": { "value": null },
+        "BLDG DESC": { "value": null }
+      }
+    ],
+    "row_6": [
+      {
+        "SUBJECT OF INSURANCE": { "value": null },
+        "AMOUNT": { "value": null },
+        "COINS %": { "value": null },
+        "VALUATION": { "value": null },
+        "CAUSES OF LOSSES": { "value": null },
+        "INFLATION GUARD %": { "value": null },
+        "DED": { "value": null },
+        "DED TYPE": { "value": null },
+        "BLKT #": { "value": null },
+        "FORMS & CONDITIONS TO APPLY": { "value": null },
+        "PREM #": { "value": null },
+        "BLDG #": { "value": null },
+        "STREET ADDRESS": { "value": null },
+        "BLDG DESC": { "value": null }
+      }
+    ],
+    "row_7": [
+      {
+        "SUBJECT OF INSURANCE": { "value": null },
+        "AMOUNT": { "value": null },
+        "COINS %": { "value": null },
+        "VALUATION": { "value": null },
+        "CAUSES OF LOSSES": { "value": null },
+        "INFLATION GUARD %": { "value": null },
+        "DED": { "value": null },
+        "DED TYPE": { "value": null },
+        "BLKT #": { "value": null },
+        "FORMS & CONDITIONS TO APPLY": { "value": null },
+        "PREM #": { "value": null },
+        "BLDG #": { "value": null },
+        "STREET ADDRESS": { "value": null },
+        "BLDG DESC": { "value": null }
+      }
+    ],
+    "row_8": [
+      {
+        "SUBJECT OF INSURANCE": { "value": null },
+        "AMOUNT": { "value": null },
+        "COINS %": { "value": null },
+        "VALUATION": { "value": null },
+        "CAUSES OF LOSSES": { "value": null },
+        "INFLATION GUARD %": { "value": null },
+        "DED": { "value": null },
+        "DED TYPE": { "value": null },
+        "BLKT #": { "value": null },
+        "FORMS & CONDITIONS TO APPLY": { "value": null },
+        "PREM #": { "value": null },
+        "BLDG #": { "value": null },
+        "STREET ADDRESS": { "value": null },
+        "BLDG DESC": { "value": null }
+      }
+    ]
+  },
+
+  "BLANKET SUMMARY": {
+    "section_metadata": {
+      "repeating_rows": "yes",
+      "rows": ["row_1", "row_2", "row_3"],
+      "input_value_format": ["typed"],
+      "ui_hint": "Small table labeled BLANKET SUMMARY on this form listing BLKT #, AMOUNT, and BLKT TYPE.",
+      "extraction_hint": "Each blanket entry consists of BLKT #, AMOUNT, and BLKT TYPE. If two blanket entries appear on the same printed horizontal line in the BLANKET SUMMARY table, treat them as two separate logical rows (row_1, row_2, row_3, etc.), not a single combined row. Do not merge text from multiple blankets into one TYPE or AMOUNT; keep each blanket's fields separate with exactly one blanket per logical row."
+    },
+    "row_1": [
+      {
+        "BLKT #": { "value": null },
+        "AMOUNT": { "value": null },
+        "BLKT TYPE": { "value": null }
+      }
+    ],
+    "row_2": [
+      {
+        "BLKT #": { "value": null },
+        "AMOUNT": { "value": null },
+        "BLKT TYPE": { "value": null }
+      }
+    ],
+    "row_3": [
+      {
+        "BLKT #": { "value": null },
+        "AMOUNT": { "value": null },
+        "BLKT TYPE": { "value": null }
+      }
+    ]
+  }
+}

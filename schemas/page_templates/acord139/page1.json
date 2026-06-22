@@ -1,0 +1,445 @@
+{
+  "PAGE METADATA": {
+    "form_name": "ACORD 139",
+    "form_title": "Statement of Values",
+    "edition": "2015/12",
+    "page_number": "1",
+    "total_pages": "1",
+    "date (MM/DD/YYYY)": "01/07/2021",
+    "form_copyright": "© 1996-2015 ACORD CORPORATION. All rights reserved."
+  },
+
+  "AGENCY": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed"]
+    },
+    "row_1": [
+      {
+        "AGENCY NAME AND ADDRESS": { "value": "Heil & Heil Insurance Agency LLC\n5215 Old Orchard Rd. Suite 300\nSkokie IL 60077" },
+        "CONTACT NAME": { "value": "Roberta Arce-Atiles" },
+        "PHONE": { "value": "(847) 866-7400" },
+        "FAX": { "value": "(847) 965-8600" },
+        "EMAIL ADDRESS": { "value": "rarce@heilandheil.com" },
+        "CODE": { "value": "40010" },
+        "SUBCODE": { "value": "" },
+        "AGENCY CUSTOMER ID": { "value": "00025572" }
+      }
+    ]
+  },
+
+  "CARRIER": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed"]
+    },
+    "row_1": [
+      {
+        "CARRIER": { "value": "Greater New York Insurance Cos" },
+        "NAIC CODE": { "value": "22187" },
+        "EFFECTIVE DATE": { "value": "01/18/2021" },
+        "HEADQUARTERS ADDRESS": { "value": "c/o Chris Bober\nChicago IL 60622" }
+      }
+    ]
+  },
+
+  "INSURED / APPLICANT": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed"]
+    },
+    "row_1": [
+      {
+        "NAMED INSURED": { "value": "855 N. Maplewood, LLC." },
+        "POLICY NUMBER": { "value": "QUOTING 21-22" },
+        "DATE OF APPLICATION": { "value": "01/18/2021" },
+        "PAGE": { "value": "1" },
+        "OF": { "value": "" }
+      }
+    ]
+  },
+
+  "COINS %": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["checkbox"]
+    },
+    "row_1": [
+      {
+        "80%": { "checked": false },
+        "90%": { "checked": false },
+        "100%": { "checked": true }
+      }
+    ]
+  },
+
+  "APPLICABLE CAUSES OF LOSS": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["checkbox"]
+    },
+    "row_1": [
+      {
+        "BASIC": { "checked": true },
+        "BROAD": { "checked": true },
+        "SPECIAL": { "checked": true },
+        "EARTHQUAKE COV": { "checked": false },
+        "FLOOD": { "checked": false },
+        "SPRINKLER LEAKAGE EXCL": { "checked": false },
+        "VANDALISM EXCL": { "checked": false }
+      }
+    ]
+  },
+
+  "RATE REQUEST TYPE": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["checkbox"]
+    },
+    "row_1": [
+      {
+        "SPECIFIC AVERAGE RATE REQUESTED": { "checked": false },
+        "BLANKET RATE REQUESTED": { "checked": false }
+      }
+    ]
+  },
+
+  "STATEMENT OF VALUES": {
+    "section_metadata": {
+      "repeating_rows": "yes",
+      "rows": ["row_1", "row_2"],
+      "input_value_format": ["typed"]
+    },
+    "row_1": [
+      {
+        "CLASS CODE": { "value": "" },
+        "LOC #": { "value": "1" },
+        "BLDG #": { "value": "1" },
+        "DESCRIPTION OF PROPERTY": { "value": "7 unit apartment building" },
+        "ADDRESS OF PROPERTY": { "value": "855 N Maplewood Ave\nChicago IL 60622" },
+        "VALUATION": { "value": "RC" },
+        "SUBJECT": { "value": "B" },
+        "100% VALUES": { "value": "1,723,748" },
+        "LIMITS OF INSURANCE": { "value": "" },
+        "RATE OR LOSS COST": { "value": "" },
+        "PREMIUM": { "value": "" }
+      }
+    ],
+    "row_2": [
+      {
+        "CLASS CODE": { "value": "" },
+        "LOC #": { "value": "1" },
+        "BLDG #": { "value": "1" },
+        "DESCRIPTION OF PROPERTY": { "value": "7 unit apartment building" },
+        "ADDRESS OF PROPERTY": { "value": "855 N Maplewood Ave\nChicago IL 60622" },
+        "VALUATION": { "value": "ALS" },
+        "SUBJECT": { "value": "INRV" },
+        "100% VALUES": { "value": "105,000" },
+        "LIMITS OF INSURANCE": { "value": "" },
+        "RATE OR LOSS COST": { "value": "" },
+        "PREMIUM": { "value": "" }
+      }
+
+    ],
+    "row_3": [
+      {
+        "CLASS CODE": { "value": "" },
+        "LOC #": { "value": "1" },
+        "BLDG #": { "value": "1" },
+        "DESCRIPTION OF PROPERTY": { "value": "7 unit apartment building" },
+        "ADDRESS OF PROPERTY": { "value": "855 N Maplewood Ave\nChicago IL 60622" },
+        "VALUATION": { "value": "ALS" },
+        "SUBJECT": { "value": "INRV" },
+        "100% VALUES": { "value": "105,000" },
+        "LIMITS OF INSURANCE": { "value": "" },
+        "RATE OR LOSS COST": { "value": "" },
+        "PREMIUM": { "value": "" }
+      }
+      
+    ],
+    "row_4": [
+      {
+        "CLASS CODE": { "value": "" },
+        "LOC #": { "value": "1" },
+        "BLDG #": { "value": "1" },
+        "DESCRIPTION OF PROPERTY": { "value": "7 unit apartment building" },
+        "ADDRESS OF PROPERTY": { "value": "855 N Maplewood Ave\nChicago IL 60622" },
+        "VALUATION": { "value": "ALS" },
+        "SUBJECT": { "value": "INRV" },
+        "100% VALUES": { "value": "105,000" },
+        "LIMITS OF INSURANCE": { "value": "" },
+        "RATE OR LOSS COST": { "value": "" },
+        "PREMIUM": { "value": "" }
+      }
+      
+    ],
+    "row_5": [
+      {
+        "CLASS CODE": { "value": "" },
+        "LOC #": { "value": "1" },
+        "BLDG #": { "value": "1" },
+        "DESCRIPTION OF PROPERTY": { "value": "7 unit apartment building" },
+        "ADDRESS OF PROPERTY": { "value": "855 N Maplewood Ave\nChicago IL 60622" },
+        "VALUATION": { "value": "ALS" },
+        "SUBJECT": { "value": "INRV" },
+        "100% VALUES": { "value": "105,000" },
+        "LIMITS OF INSURANCE": { "value": "" },
+        "RATE OR LOSS COST": { "value": "" },
+        "PREMIUM": { "value": "" }
+      }
+      
+    ],
+    "row_6": [
+      {
+        "CLASS CODE": { "value": "" },
+        "LOC #": { "value": "1" },
+        "BLDG #": { "value": "1" },
+        "DESCRIPTION OF PROPERTY": { "value": "7 unit apartment building" },
+        "ADDRESS OF PROPERTY": { "value": "855 N Maplewood Ave\nChicago IL 60622" },
+        "VALUATION": { "value": "ALS" },
+        "SUBJECT": { "value": "INRV" },
+        "100% VALUES": { "value": "105,000" },
+        "LIMITS OF INSURANCE": { "value": "" },
+        "RATE OR LOSS COST": { "value": "" },
+        "PREMIUM": { "value": "" }
+      }
+      
+    ],
+    "row_7": [
+      {
+        "CLASS CODE": { "value": "" },
+        "LOC #": { "value": "1" },
+        "BLDG #": { "value": "1" },
+        "DESCRIPTION OF PROPERTY": { "value": "7 unit apartment building" },
+        "ADDRESS OF PROPERTY": { "value": "855 N Maplewood Ave\nChicago IL 60622" },
+        "VALUATION": { "value": "ALS" },
+        "SUBJECT": { "value": "INRV" },
+        "100% VALUES": { "value": "105,000" },
+        "LIMITS OF INSURANCE": { "value": "" },
+        "RATE OR LOSS COST": { "value": "" },
+        "PREMIUM": { "value": "" }
+      }
+      
+    ],
+    "row_8": [
+      {
+        "CLASS CODE": { "value": "" },
+        "LOC #": { "value": "1" },
+        "BLDG #": { "value": "1" },
+        "DESCRIPTION OF PROPERTY": { "value": "7 unit apartment building" },
+        "ADDRESS OF PROPERTY": { "value": "855 N Maplewood Ave\nChicago IL 60622" },
+        "VALUATION": { "value": "ALS" },
+        "SUBJECT": { "value": "INRV" },
+        "100% VALUES": { "value": "105,000" },
+        "LIMITS OF INSURANCE": { "value": "" },
+        "RATE OR LOSS COST": { "value": "" },
+        "PREMIUM": { "value": "" }
+      }
+      
+    ],
+    "row_9": [
+      {
+        "CLASS CODE": { "value": "" },
+        "LOC #": { "value": "1" },
+        "BLDG #": { "value": "1" },
+        "DESCRIPTION OF PROPERTY": { "value": "7 unit apartment building" },
+        "ADDRESS OF PROPERTY": { "value": "855 N Maplewood Ave\nChicago IL 60622" },
+        "VALUATION": { "value": "ALS" },
+        "SUBJECT": { "value": "INRV" },
+        "100% VALUES": { "value": "105,000" },
+        "LIMITS OF INSURANCE": { "value": "" },
+        "RATE OR LOSS COST": { "value": "" },
+        "PREMIUM": { "value": "" }
+      }
+      
+    ],
+     "row_10": [
+      {
+        "CLASS CODE": { "value": "" },
+        "LOC #": { "value": "1" },
+        "BLDG #": { "value": "1" },
+        "DESCRIPTION OF PROPERTY": { "value": "7 unit apartment building" },
+        "ADDRESS OF PROPERTY": { "value": "855 N Maplewood Ave\nChicago IL 60622" },
+        "VALUATION": { "value": "ALS" },
+        "SUBJECT": { "value": "INRV" },
+        "100% VALUES": { "value": "105,000" },
+        "LIMITS OF INSURANCE": { "value": "" },
+        "RATE OR LOSS COST": { "value": "" },
+        "PREMIUM": { "value": "" }
+      }
+      
+    ],
+     "row_11": [
+      {
+        "CLASS CODE": { "value": "" },
+        "LOC #": { "value": "1" },
+        "BLDG #": { "value": "1" },
+        "DESCRIPTION OF PROPERTY": { "value": "7 unit apartment building" },
+        "ADDRESS OF PROPERTY": { "value": "855 N Maplewood Ave\nChicago IL 60622" },
+        "VALUATION": { "value": "ALS" },
+        "SUBJECT": { "value": "INRV" },
+        "100% VALUES": { "value": "105,000" },
+        "LIMITS OF INSURANCE": { "value": "" },
+        "RATE OR LOSS COST": { "value": "" },
+        "PREMIUM": { "value": "" }
+      }
+      
+    ],
+     "row_12": [
+      {
+        "CLASS CODE": { "value": "" },
+        "LOC #": { "value": "1" },
+        "BLDG #": { "value": "1" },
+        "DESCRIPTION OF PROPERTY": { "value": "7 unit apartment building" },
+        "ADDRESS OF PROPERTY": { "value": "855 N Maplewood Ave\nChicago IL 60622" },
+        "VALUATION": { "value": "ALS" },
+        "SUBJECT": { "value": "INRV" },
+        "100% VALUES": { "value": "105,000" },
+        "LIMITS OF INSURANCE": { "value": "" },
+        "RATE OR LOSS COST": { "value": "" },
+        "PREMIUM": { "value": "" }
+      }
+      
+    ],
+    "TOTALS": {
+      "TOTAL 100% VALUES": { "value": "1,828,748" },
+      "TOTAL RATE OR LOSS COST": { "value": "N/A" },
+      "TOTAL PREMIUM": { "value": "" }
+    }
+  },
+
+  "SIGNATURE": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed"]
+    },
+    "row_1": [
+      {
+        "INSURED'S SIGNATURE": { "value": "" },
+        "TITLE": { "value": "" },
+        "DATE": { "value": "" }
+      }
+    ]
+  },
+
+  "APPLICABLE FORM NUMBERS": {
+    "note": "Attach completed forms and endorsements that require completion to provide necessary information affecting rates or loss costs",
+    "value": ""
+  },
+
+  "ISSUES_FOUND": {
+    "metadata_corrections": [
+      {
+        "field": "edition",
+        "original_value": null,
+        "corrected_value": "2015/12",
+        "source": "Form footer shows 'ACORD 139 (2015/12)'"
+      },
+      {
+        "field": "total_pages",
+        "original_value": null,
+        "corrected_value": "1",
+        "source": "Only one page present in document"
+      },
+      {
+        "field": "date",
+        "original_value": null,
+        "corrected_value": "01/07/2021",
+        "source": "Date stamp at top of form"
+      }
+    ],
+    "missing_fields_added": [
+      {
+        "field": "FAX",
+        "location": "AGENCY section",
+        "value": "(847) 965-8600"
+      },
+      {
+        "field": "CODE",
+        "location": "AGENCY section",
+        "value": "40010"
+      },
+      {
+        "field": "SUBCODE",
+        "location": "AGENCY section",
+        "value": ""
+      },
+      {
+        "field": "AGENCY CUSTOMER ID",
+        "location": "AGENCY section",
+        "value": "00025572"
+      },
+      {
+        "field": "HEADQUARTERS ADDRESS",
+        "location": "CARRIER section",
+        "value": "c/o Chris Bober, Chicago IL 60622"
+      },
+      {
+        "field": "POLICY NUMBER",
+        "location": "INSURED / APPLICANT section",
+        "value": "QUOTING 21-22"
+      },
+      {
+        "field": "PAGE / OF",
+        "location": "INSURED / APPLICANT section",
+        "value": "1 / (blank)"
+      }
+    ],
+    "field_name_corrections": [
+      {
+        "field": "ACV/RC or Valuation",
+        "corrected_to": "VALUATION",
+        "reason": "Column header in actual form uses 'VALU-ATION' (hyphenated)"
+      },
+      {
+        "field": "EARTHQUAKE",
+        "corrected_to": "EARTHQUAKE COV",
+        "reason": "Form shows 'EARTHQUAKE COV' as checkbox label"
+      },
+      {
+        "field": "WIND",
+        "removed": true,
+        "reason": "Not present on this edition of form"
+      },
+      {
+        "field": "OTHER",
+        "removed": true,
+        "reason": "Not present on this edition of form"
+      },
+      {
+        "added_fields": [
+          "SPRINKLER LEAKAGE EXCL",
+          "VANDALISM EXCL"
+        ],
+        "reason": "These checkboxes are present on the form"
+      }
+    ],
+    "data_corrections": [
+      {
+        "field": "COINS %",
+        "issue": "100% was checked on form but not marked in original metadata",
+        "corrected": true
+      },
+      {
+        "field": "APPLICABLE CAUSES OF LOSS",
+        "issue": "BASIC, BROAD, and SPECIAL were all checked but not marked in original metadata",
+        "corrected": true
+      }
+    ],
+    "validation_notes": [
+      "Form edition year 2015 confirmed - shown as 'ACORD 139 (2015/12)' in footer",
+      "This is December 2015 edition based on notation '(2015/12)'",
+      "Document date stamp shows 01/07/2021 - this is when form was filled out, not the form edition year",
+      "All visible filled fields have been captured",
+      "Signature section is blank (unsigned)",
+      "Policy is in 'QUOTING' status, not yet bound"
+    ]
+  }
+}

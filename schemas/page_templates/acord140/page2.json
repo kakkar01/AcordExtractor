@@ -1,0 +1,518 @@
+{
+  "PAGE METADATA": {
+    "form_name": "ACORD 140",
+    "form_title": "Property Section (Continued)",
+    "edition": "2016/01",
+    "page_number": "2",
+    "total_pages": "18",
+    "date (MM/DD/YYYY)": null
+  },
+  "ADDITIONAL PREMISES INFORMATION": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed", "checkbox"],
+      "extraction_tips": [
+        "This section has the same structure as PREMISES INFORMATION on page 1 for the 2005/01 edition",
+        "For this page 2 metadata, only model the single additional premises/building actually shown on this physical page",
+        "Extract all the same fields as page 1: premises #, address, building #, construction type, distances, protection class, etc.",
+        "If the PDF page only shows one additional premises/building, do not create extra empty premises blocks; keep a single row_1 only"
+      ],
+      "ui_tips": [
+        "Label this section as 'Additional Premises' or 'Premises #X' consistent with page 1",
+        "Use the same layout as page 1 PREMISES INFORMATION for this single additional premises",
+        "Do not show multiple premises cards for this page; only display the one premises captured in row_1"
+      ]
+    },
+    "row_1": [
+      {
+        "PREMISES #": {
+          "value": null,
+          "extraction_tip": "Premises number for the additional premises/building shown on this page (page 2)"
+        },
+        "STREET ADDRESS": {
+          "value": null,
+          "extraction_tip": "Street address for this additional premises/building"
+        },
+        "BUILDING #": {
+          "value": null,
+          "extraction_tip": "Building number for this premises entry as printed on the form"
+        },
+        "BLDG DESCRIPTION": {
+          "value": null,
+          "extraction_tip": "Description of this building (e.g., 'Storage Garage', 'Building 2 of 4')"
+        },
+        "CONSTRUCTION TYPE": {
+          "value": null,
+          "extraction_tip": "Construction type for this building (e.g., Frame, Joisted Masonry)"
+        },
+        "FIRE DISTRICT": {
+          "value": null,
+          "extraction_tip": "Fire district name or code, if shown"
+        },
+        "CODE NUMBER": {
+          "value": null,
+          "extraction_tip": "Fire district code number, if shown"
+        },
+        "DISTANCE TO FIRE STATION": {
+          "value": null,
+          "extraction_tip": "Distance to fire station (mi or ft) for this premises"
+        },
+        "DISTANCE TO HYDRANT": {
+          "value": null,
+          "extraction_tip": "Distance to nearest hydrant for this premises"
+        },
+        "PROT CLASS": {
+          "value": null,
+          "extraction_tip": "Protection class rating for this premises/building"
+        },
+        "NUMBER OF STORIES": {
+          "value": null,
+          "extraction_tip": "Number of stories for this building"
+        },
+        "NUMBER OF BASEMENTS": {
+          "value": null,
+          "extraction_tip": "Number of basement levels for this building, if shown"
+        },
+        "YEAR BUILT": {
+          "value": null,
+          "extraction_tip": "Year this building was constructed"
+        },
+        "TOTAL AREA (SQ FT)": {
+          "value": null,
+          "extraction_tip": "Total square footage for this building"
+        }
+      }
+    ]
+  },
+
+  "COVERAGE INFORMATION": {
+    "section_metadata": {
+      "repeating_rows": "yes",
+      "rows": ["row_1", "row_2", "row_3", "row_4", "row_5"],
+      "input_value_format": ["typed"],
+      "extraction_tips": [
+        "Same structure as page 1 COVERAGE INFORMATION but applies to the additional premises on page 2 of the 2005/01 edition.",
+        "Extract SUBJECT OF INSURANCE, AMOUNT, COINS %, VALUATION, CAUSES OF LOSS, INFLATION GUARD %, DED, DED TYPE, BLKT #, and FORMS & CONDITIONS TO APPLY exactly as they appear in the table.",
+        "CRITICAL: Keep SUBJECT OF INSURANCE and premises metadata (Premises #, Building #, Street Address, BLDG DESCRIPTION) aligned to the additional premises shown at the top of this page (Premises #2/#3/#4, etc.).",
+        "If the table is blank for a given PDF, leave all values null but still model the section so downstream logic knows coverage can appear here."
+      ],
+      "ui_tips": [
+        "Display this as a detailed coverage table matching the page 1 COVERAGE INFORMATION format, but clearly labeled as applying to the additional premises shown on this page.",
+        "Show SUBJECT OF INSURANCE and BLKT # clearly so users can see which blanket (if any) applies to this additional premises.",
+        "Keep column order and styling consistent with page 1 for easier comparison across all premises."
+      ]
+    },
+    "row_1": [
+      {
+        "SUBJECT OF INSURANCE": {
+          "value": null,
+          "extraction_tip": "Subject description for coverage at this additional premises (for example, Building, Business Personal Property, or similar text in the SUBJECT OF INSURANCE column)."
+        },
+        "AMOUNT": {
+          "value": null,
+          "extraction_tip": "Limit for this subject; capture the full amount as printed. When normalizing, remove currency symbols and commas."
+        },
+        "COINS %": {
+          "value": null,
+          "extraction_tip": "Numeric coinsurance percentage only (e.g., '80', '90', '100'). Do not include the % sign."
+        },
+        "VALUATION": {
+          "value": null,
+          "extraction_tip": "Valuation code (e.g., RC, ACV, or other codes printed on this 2005 form)."
+        },
+        "CAUSES OF LOSS": {
+          "value": null,
+          "extraction_tip": "Full causes-of-loss text exactly as shown for this coverage line (e.g., Special, Broad, Basic)."
+        },
+        "INFLATION GUARD %": {
+          "value": null,
+          "extraction_tip": "Inflation guard percentage when printed; leave null if blank."
+        },
+        "DED": {
+          "value": null,
+          "extraction_tip": "Deductible amount for this coverage; copy text exactly as shown, including any units or qualifiers."
+        },
+        "DED TYPE": {
+          "value": null,
+          "extraction_tip": "Deductible type (Per, Dollars, Hours, etc.) when indicated in the table."
+        },
+        "BLKT #": {
+          "value": null,
+          "extraction_tip": "Blanket number reference if this line is included in a blanket; null if not used."
+        },
+        "FORMS & CONDITIONS TO APPLY": {
+          "value": null,
+          "extraction_tip": "Any form numbers, endorsements, or condition codes that apply to this coverage line."
+        }
+      }
+    ],
+    "row_2": [
+      {
+        "SUBJECT OF INSURANCE": {
+          "value": null,
+          "extraction_tip": "Subject description for coverage at this additional premises."
+        },
+        "AMOUNT": {
+          "value": null,
+          "extraction_tip": "Limit for this subject; remove $ and commas when normalizing amounts."
+        },
+        "COINS %": {
+          "value": null,
+          "extraction_tip": "Numeric coinsurance percentage only."
+        },
+        "VALUATION": {
+          "value": null,
+          "extraction_tip": "Valuation code."
+        },
+        "CAUSES OF LOSS": {
+          "value": null,
+          "extraction_tip": "Full causes-of-loss text."
+        },
+        "INFLATION GUARD %": {
+          "value": null,
+          "extraction_tip": "Inflation guard percentage when printed; null if blank."
+        },
+        "DED": {
+          "value": null,
+          "extraction_tip": "Deductible amount."
+        },
+        "DED TYPE": {
+          "value": null,
+          "extraction_tip": "Deductible type."
+        },
+        "BLKT #": {
+          "value": null,
+          "extraction_tip": "Blanket number reference."
+        },
+        "FORMS & CONDITIONS TO APPLY": {
+          "value": null,
+          "extraction_tip": "Any form numbers, endorsements, or condition codes."
+        }
+      }
+    ],
+    "row_3": [
+      {
+        "SUBJECT OF INSURANCE": {
+          "value": null,
+          "extraction_tip": "Subject description for coverage at this additional premises."
+        },
+        "AMOUNT": {
+          "value": null,
+          "extraction_tip": "Limit for this subject; remove $ and commas when normalizing amounts."
+        },
+        "COINS %": {
+          "value": null,
+          "extraction_tip": "Numeric coinsurance percentage only."
+        },
+        "VALUATION": {
+          "value": null,
+          "extraction_tip": "Valuation code."
+        },
+        "CAUSES OF LOSS": {
+          "value": null,
+          "extraction_tip": "Full causes-of-loss text."
+        },
+        "INFLATION GUARD %": {
+          "value": null,
+          "extraction_tip": "Inflation guard percentage when printed; null if blank."
+        },
+        "DED": {
+          "value": null,
+          "extraction_tip": "Deductible amount."
+        },
+        "DED TYPE": {
+          "value": null,
+          "extraction_tip": "Deductible type."
+        },
+        "BLKT #": {
+          "value": null,
+          "extraction_tip": "Blanket number reference."
+        },
+        "FORMS & CONDITIONS TO APPLY": {
+          "value": null,
+          "extraction_tip": "Any form numbers, endorsements, or condition codes."
+        }
+      }
+    ],
+    "row_4": [
+      {
+        "SUBJECT OF INSURANCE": {
+          "value": null,
+          "extraction_tip": "Subject description for coverage at this additional premises."
+        },
+        "AMOUNT": {
+          "value": null,
+          "extraction_tip": "Limit for this subject; remove $ and commas when normalizing amounts."
+        },
+        "COINS %": {
+          "value": null,
+          "extraction_tip": "Numeric coinsurance percentage only."
+        },
+        "VALUATION": {
+          "value": null,
+          "extraction_tip": "Valuation code."
+        },
+        "CAUSES OF LOSS": {
+          "value": null,
+          "extraction_tip": "Full causes-of-loss text."
+        },
+        "INFLATION GUARD %": {
+          "value": null,
+          "extraction_tip": "Inflation guard percentage when printed; null if blank."
+        },
+        "DED": {
+          "value": null,
+          "extraction_tip": "Deductible amount."
+        },
+        "DED TYPE": {
+          "value": null,
+          "extraction_tip": "Deductible type."
+        },
+        "BLKT #": {
+          "value": null,
+          "extraction_tip": "Blanket number reference."
+        },
+        "FORMS & CONDITIONS TO APPLY": {
+          "value": null,
+          "extraction_tip": "Any form numbers, endorsements, or condition codes."
+        }
+      }
+    ],
+    "row_5": [
+      {
+        "SUBJECT OF INSURANCE": {
+          "value": null,
+          "extraction_tip": "Subject description for coverage at this additional premises."
+        },
+        "AMOUNT": {
+          "value": null,
+          "extraction_tip": "Limit for this subject; remove $ and commas when normalizing amounts."
+        },
+        "COINS %": {
+          "value": null,
+          "extraction_tip": "Numeric coinsurance percentage only."
+        },
+        "VALUATION": {
+          "value": null,
+          "extraction_tip": "Valuation code."
+        },
+        "CAUSES OF LOSS": {
+          "value": null,
+          "extraction_tip": "Full causes-of-loss text."
+        },
+        "INFLATION GUARD %": {
+          "value": null,
+          "extraction_tip": "Inflation guard percentage when printed; null if blank."
+        },
+        "DED": {
+          "value": null,
+          "extraction_tip": "Deductible amount."
+        },
+        "DED TYPE": {
+          "value": null,
+          "extraction_tip": "Deductible type."
+        },
+        "BLKT #": {
+          "value": null,
+          "extraction_tip": "Blanket number reference."
+        },
+        "FORMS & CONDITIONS TO APPLY": {
+          "value": null,
+          "extraction_tip": "Any form numbers, endorsements, or condition codes."
+        }
+      }
+    ]
+  },
+
+  "BUILDING IMPROVEMENTS": {
+    "section_metadata": {
+      "repeating_rows": "yes",
+      "rows": ["row_1", "row_2", "row_3", "row_4"],
+      "input_value_format": ["typed", "checkbox"]
+    },
+    "row_1": [
+      {
+        "TYPE": { "value": "ROOFING" },
+        "YEAR": { "value": null },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_2": [
+      {
+        "TYPE": { "value": "HEATING" },
+        "YEAR": { "value": null },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_3": [
+      {
+        "TYPE": { "value": "WIRING" },
+        "YEAR": { "value": null },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_4": [
+      {
+        "TYPE": { "value": "PLUMBING" },
+        "YEAR": { "value": null },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ]
+  },
+
+  "ROOF AND HEATING INFORMATION": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed", "checkbox"]
+    },
+    "row_1": [
+      {
+        "ROOF TYPE": { "value": null },
+        "OTHER OCCUPANCIES": { "value": null },
+        "HEATING SOURCE (Incl Woodburning Stove Or Fireplace Insert)": { "value": null }
+      }
+    ]
+  },
+
+  "PRIMARY HEAT": {
+    "section_metadata": {
+      "repeating_rows": "yes",
+      "rows": ["row_1", "row_2", "row_3", "row_4", "row_5", "row_6", "row_7"],
+      "input_value_format": ["checkbox"]
+    },
+    "row_1": [
+      {
+        "TYPE": { "value": "GAS" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_2": [
+      {
+        "TYPE": { "value": "OIL" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_3": [
+      {
+        "TYPE": { "value": "COAL" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_4": [
+      {
+        "TYPE": { "value": "ELECTRIC" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_5": [
+      {
+        "TYPE": { "value": "WOOD" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_6": [
+      {
+        "TYPE": { "value": "SOLAR" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_7": [
+      {
+        "TYPE": { "value": "OTHER" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ]
+  },
+
+  "SECONDARY HEAT": {
+    "section_metadata": {
+      "repeating_rows": "yes",
+      "rows": ["row_1", "row_2", "row_3", "row_4", "row_5", "row_6", "row_7"],
+      "input_value_format": ["checkbox"]
+    },
+    "row_1": [
+      {
+        "TYPE": { "value": "GAS" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_2": [
+      {
+        "TYPE": { "value": "OIL" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_3": [
+      {
+        "TYPE": { "value": "COAL" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_4": [
+      {
+        "TYPE": { "value": "ELECTRIC" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_5": [
+      {
+        "TYPE": { "value": "WOOD" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_6": [
+      {
+        "TYPE": { "value": "SOLAR" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ],
+    "row_7": [
+      {
+        "TYPE": { "value": "OTHER" },
+        "SELECTION INDICATOR": { "checked": false }
+      }
+    ]
+  },
+
+  "BURGLAR ALARM TYPE": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed"]
+    },
+    "row_1": [
+      {
+        "BURGLAR ALARM TYPE": { "value": null }
+      }
+    ]
+  },
+
+  "PREMISES FIRE PROTECTION": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed"]
+    },
+    "row_1": [
+      {
+        "PREMISES FIRE PROTECTION (Sprinklers, Standpipes, CO2/Chemical Systems)": { "value": null },
+        "% SPRINKLER": { "value": null }
+      }
+    ]
+  },
+
+  "REMARKS": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed"]
+    },
+    "row_1": [
+      {
+        "REMARKS": { "value": null }
+      }
+    ]
+  }
+}

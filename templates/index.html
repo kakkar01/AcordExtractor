@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ACORD Extractor Review UI</title>
+    <style>
+      :root { color-scheme: light dark; font-family: Arial, sans-serif; }
+      body { margin: 0; background: #f4f6fb; color: #172033; }
+      .wrap { max-width: 1440px; margin: 0 auto; padding: 24px; }
+      .panel { background: white; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,.08); padding: 20px; }
+      .topbar { display: flex; justify-content: space-between; gap: 16px; align-items: center; margin-bottom: 16px; }
+      .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+      .dropzone { border: 2px dashed #4d78ff; border-radius: 12px; padding: 16px; background: #f8fbff; min-height: 360px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+      .dropzone input[type="file"] { margin: 12px 0; }
+      .preview { width: 100%; min-height: 360px; border-radius: 12px; background: #f8f9fc; border: 1px solid #dfe6f3; display: flex; align-items: center; justify-content: center; overflow: auto; }
+      .preview iframe, .preview img { width: 100%; min-height: 360px; border: 0; }
+      .result { white-space: pre-wrap; font-family: Consolas, monospace; font-size: 13px; background: #0f172a; color: #e2e8f0; padding: 16px; border-radius: 12px; min-height: 360px; overflow: auto; }
+      .field { margin: 8px 0; padding: 8px 10px; background: #f8fafc; border-radius: 8px; }
+      .label { font-weight: 700; color: #3654a4; display: block; margin-bottom: 4px; }
+      button { padding: 10px 14px; border: 0; border-radius: 8px; background: #2952cc; color: white; cursor: pointer; }
+      button:disabled { opacity: .6; cursor: wait; }
+      .muted { color: #64748b; font-size: 13px; }
+      .summary { display: grid; gap: 8px; margin-top: 16px; }
+      .summary .field { background: #eef4ff; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="panel">
+        <div class="topbar">
+          <div>
+            <h2 style="margin: 0;">ACORD Extraction Review</h2>
+            <div class="muted">Upload a PDF and inspect the extraction output side by side.</div>
+          </div>
+          <div>
+            <label for="formSelect">Form</label>
+            <select id="formSelect" style="padding: 8px; border-radius: 8px; border: 1px solid #cbd5e1;">
+              <option value="">Auto-detect</option>
+              <option value="ACORD 125">ACORD 125</option>
+              <option value="ACORD 140">ACORD 140</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div>
+            <div class="dropzone">
+              <input id="fileInput" type="file" accept=".pdf,.png,.jpg,.jpeg,.tiff" />
+              <button id="runBtn" type="button">Run extraction</button>
+              <div class="muted" style="margin-top:8px;">The uploaded file will be shown here once processed.</div>
+            </div>
+            <div class="preview" id="previewArea">
+              <div class="muted">PDF preview will appear here.</div>
+            </div>
+          </div>
+
+          <div>
+            <div class="result" id="resultArea">{ "status": "Upload a PDF to begin" }</div>
+            <div class="summary" id="summaryArea"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const fileInput = document.getElementById('fileInput');
+      const runBtn = document.getElementById('runBtn');
+      const previewArea = document.getElementById('previewArea');
+      const resultArea = document.getElementById('resultArea');
+      const summaryArea = document.getElementById('summaryArea');
+      const formSelect = document.getElementById('formSelect');
+
+      let currentFileName = null;
+
+      fileInput.addEventListener('change', () => {
+        const file = fileInput.files[0];
+        if (!file) return;
+        currentFileName = file.name;
+        const url = URL.createObjectURL(file);
+        previewArea.innerHTML = '';
+        if (file.type.includes('pdf')) {
+          const iframe = document.createElement('iframe');
+          iframe.src = url;
+          previewArea.appendChild(iframe);
+        } else {
+          const img = document.createElement('img');
+          img.src = url;
+          previewArea.appendChild(img);
+        }
+      });
+
+      runBtn.addEventListener('click', async () => {
+        const file = fileInput.files[0];
+        if (!file) {
+          resultArea.textContent = '{"error":"Please choose a file first"}';
+          return;
+        }
+
+        runBtn.disabled = true;
+        runBtn.textContent = 'Processing...';
+        resultArea.textContent = 'Running extraction...';
+        summaryArea.innerHTML = '';
+
+        const formData = new FormData();
+        formData.append('file', file);
+        formData.append('form_name', formSelect.value || '');
+
+        try {
+          const response = await fetch('/extract', { method: 'POST', body: formData });
+          const data = await response.json();
+          if (!response.ok) {
+            throw new Error(data.error || 'Extraction failed');
+          }
+          currentFileName = data.source_name || currentFileName;
+          const output = data.output || {};
+          resultArea.textContent = JSON.stringify(output, null, 2);
+          renderSummary(output);
+        } catch (error) {
+          resultArea.textContent = JSON.stringify({ error: error.message }, null, 2);
+        } finally {
+          runBtn.disabled = false;
+          runBtn.textContent = 'Run extraction';
+        }
+      });
+
+      function renderSummary(output) {
+        const entries = [];
+        if (output.policy_header) {
+          entries.push(['Agency', output.policy_header.agency || '']);
+          entries.push(['Status', summarizeStatus(output.policy_header.status_of_transaction)]);
+        }
+        if (output.lines_of_business) {
+          const selected = output.lines_of_business.filter(item => item.selected).map(item => item.lob);
+          entries.push(['Selected LOBs', selected.join(', ') || 'None']);
+        }
+        if (output.policy_information) {
+          entries.push(['Billing plan', output.policy_information.billing_plan || '']);
+        }
+        summaryArea.innerHTML = entries.map(([label, value]) => `
+          <div class="field">
+            <span class="label">${label}</span>
+            <div>${value || '—'}</div>
+          </div>
+        `).join('');
+      }
+
+      function summarizeStatus(statusValue) {
+        if (!statusValue) return '';
+        if (Array.isArray(statusValue)) {
+          const first = statusValue[0] || {};
+          return Object.entries(first).filter(([, selected]) => selected).map(([label]) => label).join(', ') || 'None';
+        }
+        return String(statusValue);
+      }
+    </script>
+  </body>
+</html>

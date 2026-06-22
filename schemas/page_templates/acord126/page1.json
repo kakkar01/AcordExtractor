@@ -1,0 +1,231 @@
+{
+  "PAGE METADATA": {
+    "form_name": "ACORD 126",
+    "form_title": "Commercial General Liability Section",
+    "edition": "2016",
+    "page_number": "1",
+    "total_pages": "2",
+    "date (MM/DD/YYYY)": null,
+    "extraction_tips": [
+      "This is page 1 of the ACORD 126 Commercial General Liability Section, 2016 edition.",
+      "Capture the edition year '2016' and the page number '1 of 2' from the form header or footer if printed.",
+      "The date field in the header is the application or quote date; leave it null if no date appears."
+    ],
+    "ui_tips": [
+      "Display the form title 'Commercial General Liability Section' and edition '2016' clearly at the top of the UI.",
+      "Show the current page number (1 of 2) and overall navigation consistently with other ACORD forms.",
+      "Place the header date field next to other policy header fields to match the PDF layout."
+    ]
+  },
+
+  "POLICY AND COVERAGES": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed", "checkbox"],
+      "extraction_tips": [
+        "From the header block on page 1, extract AGENCY, CARRIER, NAIC CODE, POLICY NUMBER / QUOTE, EFFECTIVE DATE (MM/DD/YYYY), and APPLICANT (First Named Insured) exactly as they appear.",
+        "If the form includes a single line such as 'COMMERCIAL GENERAL LIABILITY CLAIMS MADE', capture that full text into COVERAGE FORM DESCRIPTION.",
+        "Capture the COMMERCIAL GENERAL LIABILITY coverage checkbox and the OCCURRENCE/CLAIMS-MADE basis checkboxes (to the left of their labels) into the COMMERCIAL_GENERAL_LIABILITY, CLAIMS_MADE, and OCCURRENCE fields.",
+        "Do not infer or rearrange header values; if a field is blank on the PDF, leave the corresponding metadata value null."
+      ],
+      "ui_tips": [
+        "Group policy identification (carrier, policy number, effective/expiration dates) with the main coverage checkboxes in a single panel.",
+        "Align checkboxes visually with their descriptive labels as shown on the ACORD 126 2016 PDF.",
+        "Use helper text or tooltips to clarify occurrence vs claims-made options, mirroring the wording on the form."
+      ]
+    },
+    "row_1": [
+      {
+        "AGENCY": { "value": null },
+        "AGENCY CUSTOMER ID": { "value": null },
+        "CARRIER": { "value": null },
+        "NAIC CODE": { "value": null },
+        "POLICY NUMBER / QUOTE": { "value": null },
+        "EFFECTIVE DATE (MM/DD/YYYY)": { "value": null },
+        "APPLICANT (First Named Insured)": { "value": null },
+        "COVERAGE FORM DESCRIPTION": { "value": null },
+        "COMMERCIAL_GENERAL_LIABILITY": { "value": null },
+        "CLAIMS_MADE": { "value": null },
+        "OCCURRENCE": { "value": null }
+      }
+    ]
+  },
+
+  "LIMITS AND PREMIUMS": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed"],
+      "extraction_tips": [
+        "From the LIMITS grid on page 1, extract the limit amounts for GENERAL AGGREGATE, PRODUCTS-COMPLETED OPERATIONS AGGREGATE, PERSONAL & ADVERTISING INJURY, EACH OCCURRENCE, DAMAGE TO PREMISES RENTED TO YOU, MEDICAL EXPENSE, and EMPLOYEE BENEFITS.",
+        "Strip out currency symbols and commas when interpreting the numeric values, but keep the raw text in this metadata field.",
+        "From the same block, capture PREM/OPS, PRODUCTS, OTHER, and TOTAL premium amounts into the premium-related fields.",
+        "If any limit or premium cell is blank on the form, leave the corresponding field null."
+      ],
+      "ui_tips": [
+        "Render limits and premiums in a table layout that mirrors the ACORD 126 2016 grid.",
+        "Keep limit labels (e.g., 'GENERAL AGGREGATE', 'EACH OCCURRENCE') clearly visible next to their values.",
+        "Use numeric-style inputs for limit and premium values while preserving raw string formatting in the stored data."
+      ]
+    },
+    "row_1": [
+      {
+        "GENERAL_AGGREGATE": { "value": null },
+        "PRODUCTS_COMPLETED_OPS_AGGREGATE": { "value": null },
+        "PERSONAL_ADVERTISING_INJURY": { "value": null },
+        "EACH_OCCURRENCE": { "value": null },
+        "DAMAGE_TO_RENTED_PREMISES": { "value": null },
+        "MEDICAL_EXPENSE": { "value": null },
+        "EMPLOYEE_BENEFITS": { "value": null },
+        "PREMISES_OPERATIONS_PREMIUM": { "value": null },
+        "PRODUCTS_PREMIUM": { "value": null },
+        "OTHER_PREMIUM": { "value": null },
+        "TOTAL_PREMIUM": { "value": null }
+      }
+    ]
+  },
+
+  "DEDUCTIBLES": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed"],
+      "extraction_tips": [
+        "Extract deductible amounts for PROPERTY DAMAGE, BODILY INJURY, and any OTHER deductible types shown in the DEDUCTIBLES section.",
+        "Copy deductible values exactly as printed, including any 'PER CLAIM' or 'PER OCCURRENCE' notation, into the corresponding fields.",
+        "If a deductible type is not listed on the form, leave its field null rather than guessing."
+      ],
+      "ui_tips": [
+        "Display deductible types and amounts in a compact grid beneath the limits and premiums section.",
+        "Allow free-form or numeric entry for deductible values to support both flat amounts and percentages.",
+        "Use labels consistent with the ACORD 126 2016 wording so users can easily match the PDF."
+      ]
+    },
+    "row_1": [
+      {
+        "FIELD_1_DEDUCTIBLE": { "value": null },
+        "FIELD_2_DEDUCTIBLE": { "value": null },
+        "FIELD_3_DEDUCTIBLE": { "value": null }
+      }
+    ]
+  },
+
+  "CLAIMS MADE": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed", "checkbox"],
+      "extraction_tips": [
+        "From the CLAIMS-MADE section, extract retroactive dates and YES/NO answers for exclusions, tail coverage, or similar questions.",
+        "Record retroactive dates in MM/DD/YYYY format if present; leave them null if not shown.",
+        "Map each YES/NO checkbox to a boolean-style value and leave unchecked options null or false."
+      ],
+      "ui_tips": [
+        "Group all claims-made questions and retroactive date fields together under a clearly labeled panel.",
+        "Use radio buttons or toggle controls for YES/NO responses to mimic the checkbox behavior on the PDF.",
+        "Place date pickers immediately next to their labels, keeping the left-to-right order from the form."
+      ]
+    },
+    "row_1": [
+      {
+        "FIELD_1_CLAIMS_MADE": { "value": null },
+        "FIELD_2_CLAIMS_MADE": { "value": null },
+        "FIELD_3_CLAIMS_MADE": { "value": null }
+      }
+    ]
+  },
+
+  "EMPLOYEE BENEFITS": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed"],
+      "extraction_tips": [
+        "From the Employee Benefits Liability section, extract limits per employee, aggregate limits, deductibles, and any employee counts that are shown.",
+        "If the 2016 form includes a retroactive date for employee benefits, capture it exactly as printed.",
+        "Leave these fields null if the Employee Benefits section is blank or not requested."
+      ],
+      "ui_tips": [
+        "Render Employee Benefits Liability as an optional block following the main CLAIMS MADE and DEDUCTIBLES sections.",
+        "Allow this block to be left empty without validation errors when EBL coverage does not apply.",
+        "Use labels and helper text that clearly indicate these values are specific to Employee Benefits Liability."
+      ]
+    },
+    "row_1": [
+      {
+        "FIELD_1_EMP_BENEFITS": { "value": null },
+        "FIELD_2_EMP_BENEFITS": { "value": null },
+        "FIELD_3_EMP_BENEFITS": { "value": null }
+      }
+    ]
+  },
+
+  "SCHEDULE OF HAZARDS": {
+    "section_metadata": {
+      "repeating_rows": "yes",
+      "rows": ["row_1", "row_2", "row_3", "row_4", "row_5"],
+      "input_value_format": ["typed"]
+    },
+    "row_1": [
+      {
+        "LOCATION": { "value": null },
+        "HAZARD": { "value": null },
+        "CLASSIFICATION": { "value": null },
+        "CLASS CODE": { "value": null },
+        "PREMIUM BASIS": { "value": null },
+        "EXPOSURE": { "value": null },
+        "RATE PREM/OPS": { "value": null },
+        "RATE PRODUCTS": { "value": null }
+      }
+    ],
+    "row_2": [
+      {
+        "LOCATION": { "value": null },
+        "HAZARD": { "value": null },
+        "CLASSIFICATION": { "value": null },
+        "CLASS CODE": { "value": null },
+        "PREMIUM BASIS": { "value": null },
+        "EXPOSURE": { "value": null },
+        "RATE PREM/OPS": { "value": null },
+        "RATE PRODUCTS": { "value": null }
+      }
+    ],
+    "row_3": [
+      {
+        "LOCATION": { "value": null },
+        "HAZARD": { "value": null },
+        "CLASSIFICATION": { "value": null },
+        "CLASS CODE": { "value": null },
+        "PREMIUM BASIS": { "value": null },
+        "EXPOSURE": { "value": null },
+        "RATE PREM/OPS": { "value": null },
+        "RATE PRODUCTS": { "value": null }
+      }
+    ],
+    "row_4": [
+      {
+        "LOCATION": { "value": null },
+        "HAZARD": { "value": null },
+        "CLASSIFICATION": { "value": null },
+        "CLASS CODE": { "value": null },
+        "PREMIUM BASIS": { "value": null },
+        "EXPOSURE": { "value": null },
+        "RATE PREM/OPS": { "value": null },
+        "RATE PRODUCTS": { "value": null }
+      }
+    ],
+    "row_5": [
+      {
+        "LOCATION": { "value": null },
+        "HAZARD": { "value": null },
+        "CLASSIFICATION": { "value": null },
+        "CLASS CODE": { "value": null },
+        "PREMIUM BASIS": { "value": null },
+        "EXPOSURE": { "value": null },
+        "RATE PREM/OPS": { "value": null },
+        "RATE PRODUCTS": { "value": null }
+      }
+    ]
+  }
+}

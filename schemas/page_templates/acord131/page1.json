@@ -1,0 +1,304 @@
+{
+  "PAGE METADATA": {
+    "form_name": "ACORD 131",
+    "form_title": "Umbrella/Excess Liability Application",
+    "edition": null,
+    "page_number": "1",
+    "total_pages": null,
+    "date (MM/DD/YYYY)": null
+  },
+
+  "POLICY INFORMATION": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed"]
+    },
+    "row_1": [
+      {
+        "AGENCY": { "value": null },
+        "AGENCY CUSTOMER ID": { "value": null },
+        "CARRIER": { "value": null },
+        "NAIC CODE": { "value": null },
+        "POLICY NUMBER": { "value": null },
+        "EFFECTIVE DATE": { "value": null },
+        "NAMED INSURED(S)": { "value": null },
+        "EXPIRING POL #": { "value": null }
+      }
+    ]
+  },
+
+  "TRANSACTION TYPE": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["checkbox"]
+    },
+    "row_1": [
+      {
+        "UMBRELLA": { "checked": false },
+        "EXCESS": { "checked": false },
+        "NEW": { "checked": false },
+        "RENEWAL": { "checked": false },
+        "OCCURRENCE": { "checked": false },
+        "CLAIMS-MADE": { "checked": false },
+        "VOLUNTARY": { "checked": false }
+      }
+    ]
+  },
+
+  "RETROACTIVE DATES": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed"]
+    },
+    "row_1": [
+      {
+        "RETROACTIVE DATE PROPOSED": { "value": null },
+        "RETROACTIVE DATE CURRENT": { "value": null }
+      }
+    ]
+  },
+
+  "LIMIT OF LIABILITY": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed", "checkbox"]
+    },
+    "row_1": [
+      {
+        "EA OCC": { "value": null },
+        "AGGREGATE": { "value": null },
+        "PROD & COMP OPS": { "value": null },
+        "RETAINED LIMIT": { "value": null },
+        "FIRST DOLLAR DEFENSE (Y/N)": { "value": null }
+      }
+    ]
+  },
+
+  "EMPLOYEE BENEFITS LIABILITY": {
+    "section_metadata": {
+      "repeating_rows": "no",
+      "rows": ["row_1"],
+      "input_value_format": ["typed"]
+    },
+    "row_1": [
+      {
+        "LIMIT OF INSURANCE (Ea Employee)": { "value": null },
+        "AGGREGATE LIMIT FOR EBL": { "value": null },
+        "RETAINED LIMIT FOR EBL": { "value": null },
+        "RETROACTIVE DATE FOR EBL": { "value": null },
+        "NAME OF BENEFIT PROGRAM": { "value": null }
+      }
+    ]
+  },
+
+  "UNDERLYING INSURANCE": {
+    "section_metadata": {
+      "repeating_rows": "yes",
+      "rows": ["row_1", "row_2", "row_3", "row_4", "row_5"],
+      "input_value_format": ["typed"]
+    },
+    "row_1": [
+      {
+        "TYPE": { "value": null },
+        "CARRIER / POLICY NUMBER": { "value": null },
+        "POLICY EFF DATE": { "value": null },
+        "POLICY EXP DATE": { "value": null },
+        "EACH OCCURRENCE": { "value": null },
+        "GENERAL AGGR": { "value": null },
+        "PERSONAL & ADV INJURY": { "value": null },
+        "DAMAGE TO RENTED PREMISES": { "value": null },
+        "MEDICAL EXPENSE": { "value": null },
+        "PROD & COMP OPS AGGREGATE": { "value": null },
+        "PREM / OPS": { "value": null },
+        "PRODUCTS": { "value": null },
+        "OTHER": { "value": null },
+        "CSL EA ACC": { "value": null },
+        "BI EA PER": { "value": null },
+        "BI EA ACC": { "value": null },
+        "PD EA ACC": { "value": null },
+        "EACH ACCIDENT": { "value": null },
+        "DISEASE EACH EMPLOYEE": { "value": null },
+        "DISEASE POLICY LIMIT": { "value": null },
+        "ANNUAL RENEWAL PREMIUM": { "value": null },
+        "RATING MOD": { "value": null }
+      }
+    ],
+    "row_2": [
+      {
+        "TYPE": { "value": null },
+        "CARRIER / POLICY NUMBER": { "value": null },
+        "POLICY EFF DATE": { "value": null },
+        "POLICY EXP DATE": { "value": null },
+        "EACH OCCURRENCE": { "value": null },
+        "GENERAL AGGR": { "value": null },
+        "PERSONAL & ADV INJURY": { "value": null },
+        "DAMAGE TO RENTED PREMISES": { "value": null },
+        "MEDICAL EXPENSE": { "value": null },
+        "PROD & COMP OPS AGGREGATE": { "value": null },
+        "PREM / OPS": { "value": null },
+        "PRODUCTS": { "value": null },
+        "OTHER": { "value": null },
+        "CSL EA ACC": { "value": null },
+        "BI EA PER": { "value": null },
+        "BI EA ACC": { "value": null },
+        "PD EA ACC": { "value": null },
+        "EACH ACCIDENT": { "value": null },
+        "DISEASE EACH EMPLOYEE": { "value": null },
+        "DISEASE POLICY LIMIT": { "value": null },
+        "ANNUAL RENEWAL PREMIUM": { "value": null },
+        "RATING MOD": { "value": null }
+      }
+    ],
+    "row_3": [
+      {
+        "TYPE": { "value": null },
+        "CARRIER / POLICY NUMBER": { "value": null },
+        "POLICY EFF DATE": { "value": null },
+        "POLICY EXP DATE": { "value": null },
+        "EACH OCCURRENCE": { "value": null },
+        "GENERAL AGGR": { "value": null },
+        "PERSONAL & ADV INJURY": { "value": null },
+        "DAMAGE TO RENTED PREMISES": { "value": null },
+        "MEDICAL EXPENSE": { "value": null },
+        "PROD & COMP OPS AGGREGATE": { "value": null },
+        "PREM / OPS": { "value": null },
+        "PRODUCTS": { "value": null },
+        "OTHER": { "value": null },
+        "CSL EA ACC": { "value": null },
+        "BI EA PER": { "value": null },
+        "BI EA ACC": { "value": null },
+        "PD EA ACC": { "value": null },
+        "EACH ACCIDENT": { "value": null },
+        "DISEASE EACH EMPLOYEE": { "value": null },
+        "DISEASE POLICY LIMIT": { "value": null },
+        "ANNUAL RENEWAL PREMIUM": { "value": null },
+        "RATING MOD": { "value": null }
+      }
+    ],
+    "row_4": [
+      {
+        "TYPE": { "value": null },
+        "CARRIER / POLICY NUMBER": { "value": null },
+        "POLICY EFF DATE": { "value": null },
+        "POLICY EXP DATE": { "value": null },
+        "EACH OCCURRENCE": { "value": null },
+        "GENERAL AGGR": { "value": null },
+        "PERSONAL & ADV INJURY": { "value": null },
+        "DAMAGE TO RENTED PREMISES": { "value": null },
+        "MEDICAL EXPENSE": { "value": null },
+        "PROD & COMP OPS AGGREGATE": { "value": null },
+        "PREM / OPS": { "value": null },
+        "PRODUCTS": { "value": null },
+        "OTHER": { "value": null },
+        "CSL EA ACC": { "value": null },
+        "BI EA PER": { "value": null },
+        "BI EA ACC": { "value": null },
+        "PD EA ACC": { "value": null },
+        "EACH ACCIDENT": { "value": null },
+        "DISEASE EACH EMPLOYEE": { "value": null },
+        "DISEASE POLICY LIMIT": { "value": null },
+        "ANNUAL RENEWAL PREMIUM": { "value": null },
+        "RATING MOD": { "value": null }
+      }
+    ],
+    "row_5": [
+      {
+        "TYPE": { "value": null },
+        "CARRIER / POLICY NUMBER": { "value": null },
+        "POLICY EFF DATE": { "value": null },
+        "POLICY EXP DATE": { "value": null },
+        "EACH OCCURRENCE": { "value": null },
+        "GENERAL AGGR": { "value": null },
+        "PERSONAL & ADV INJURY": { "value": null },
+        "DAMAGE TO RENTED PREMISES": { "value": null },
+        "MEDICAL EXPENSE": { "value": null },
+        "PROD & COMP OPS AGGREGATE": { "value": null },
+        "PREM / OPS": { "value": null },
+        "PRODUCTS": { "value": null },
+        "OTHER": { "value": null },
+        "CSL EA ACC": { "value": null },
+        "BI EA PER": { "value": null },
+        "BI EA ACC": { "value": null },
+        "PD EA ACC": { "value": null },
+        "EACH ACCIDENT": { "value": null },
+        "DISEASE EACH EMPLOYEE": { "value": null },
+        "DISEASE POLICY LIMIT": { "value": null },
+        "ANNUAL RENEWAL PREMIUM": { "value": null },
+        "RATING MOD": { "value": null }
+      }
+    ]
+  },
+
+  "PRIMARY LOCATION & SUBSIDIARIES": {
+    "section_metadata": {
+      "repeating_rows": "yes",
+      "rows": ["row_1", "row_2", "row_3", "row_4", "row_5"],
+      "input_value_format": ["typed"],
+      "extraction_tips": [
+        "For each primary location or subsidiary, extract the location number, the full combined name/location/operations text, and payroll/sales values.",
+        "On the ACORD 131 form, there is a single wide 'NAME AND LOCATION OF PRIMARY AND ALL SUBSIDIARY COMPANIES (Describe Operations)' cell that contains name, address, and operations description together; capture the full text of that cell into one field in page metadata without attempting to split it.",
+        "Copy ANN GROSS SALES and FOREIGN GROSS SALES exactly as shown; do not convert currency or add formatting.",
+        "# EMPL is the number of employees at that location or subsidiary; leave null if not printed."
+      ],
+      "ui_tips": [
+        "Display this as a table of locations/subsidiaries with one row per entity.",
+        "Provide numeric formatting help for payroll and sales fields but store raw strings in the data.",
+        "Consider row numbering to match the '#' column from the ACORD 131 form."
+      ]
+    },
+    "row_1": [
+      {
+        "#": { "value": null },
+        "NAME AND LOCATION OF PRIMARY AND ALL SUBSIDIARY COMPANIES (Describe Operations)": { "value": null },
+        "ANNUAL PAYROLL": { "value": null },
+        "ANN GROSS SALES": { "value": null },
+        "FOREIGN GROSS SALES": { "value": null },
+        "# EMPL": { "value": null }
+      }
+    ],
+    "row_2": [
+      {
+        "#": { "value": null },
+        "NAME AND LOCATION OF PRIMARY AND ALL SUBSIDIARY COMPANIES (Describe Operations)": { "value": null },
+        "ANNUAL PAYROLL": { "value": null },
+        "ANN GROSS SALES": { "value": null },
+        "FOREIGN GROSS SALES": { "value": null },
+        "# EMPL": { "value": null }
+      }
+    ],
+    "row_3": [
+      {
+        "#": { "value": null },
+        "NAME AND LOCATION OF PRIMARY AND ALL SUBSIDIARY COMPANIES (Describe Operations)": { "value": null },
+        "ANNUAL PAYROLL": { "value": null },
+        "ANN GROSS SALES": { "value": null },
+        "FOREIGN GROSS SALES": { "value": null },
+        "# EMPL": { "value": null }
+      }
+    ],
+    "row_4": [
+      {
+        "#": { "value": null },
+        "NAME AND LOCATION OF PRIMARY AND ALL SUBSIDIARY COMPANIES (Describe Operations)": { "value": null },
+        "ANNUAL PAYROLL": { "value": null },
+        "ANN GROSS SALES": { "value": null },
+        "FOREIGN GROSS SALES": { "value": null },
+        "# EMPL": { "value": null }
+      }
+    ],
+    "row_5": [
+      {
+        "#": { "value": null },
+        "NAME AND LOCATION OF PRIMARY AND ALL SUBSIDIARY COMPANIES (Describe Operations)": { "value": null },
+        "ANNUAL PAYROLL": { "value": null },
+        "ANN GROSS SALES": { "value": null },
+        "FOREIGN GROSS SALES": { "value": null },
+        "# EMPL": { "value": null }
+      }
+    ]
+  }
+}

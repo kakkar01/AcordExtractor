@@ -1,0 +1,33 @@
+# Debug outputs
+data/debug_lob_crops/
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Model weights — large binary files; store locally, not in Git
+models/NuExtract3/
+
+# Extracted outputs
+data/outputs/
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
